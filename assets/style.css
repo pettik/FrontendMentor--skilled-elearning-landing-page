@@ -3,26 +3,216 @@
 :root {
   --blue-hover: #666ca3;
   --blue: #13183f;
-  --text-gray: #83869a;
+  --text-gray: hsl(232, 10%, 56%);
   --main-orange: #f74780;
   --main-pink: #ffa7c3;
   --white: #ffffff;
   --primary-gradient: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
   --secondary-gradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+
+  --header-height: 3.5rem;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Plus Jakarta Sans', sans-serif;
+  --biggest-font-size: 5rem;
+  --bigger-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/*=============== BASE ===============*/
 * {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
   border: 0;
 }
 
-body {
-  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+html {
+  scroll-behavior: smooth;
 }
 
-/* .main-wrapper {
-  min-height: calc(100vh - 8rem);
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+  color: var(--text-gray);
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--blue);
+  font-weight: var(--font-medium);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* img {
+  max-width: 100%;
+  height: auto;
 } */
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-inline: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  font-family: var(--title-font);
+  margin-bottom: 1.5rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--h2-font-size);
+  font-family: var(--subtitle-font);
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+
+.btn {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 700;
+  padding: 1.8rem 2.5rem;
+  border-radius: 6rem;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--white);
+  /* box-shadow: 0 8px 20px hsla(232, 10%, 56%, 0.1); */
+  transition: box-shadow 0.3s;
+  padding-bottom: 3rem;
+}
+
+.nav {
+  position: relative;
+  margin-top: 3rem;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  display: flex;
+}
+
+.nav__logo {
+  align-items: center;
+  column-gap: 0.5rem;
+  transition: color 0.3s;
+}
+
+.nav__logo img {
+  width: 173px;
+}
+
+.btn-blue {
+  background-color: var(--blue);
+}
+
+/*=============== HOME ===============*/
+.home {
+  position: relative;
+}
+
+.home__container {
+  row-gap: 6rem;
+  padding-top: 8rem;
+}
+
+.home__data {
+  text-align: left;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2rem;
+}
+
+.home__title div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+.home__description {
+  margin-bottom: 5rem;
+  font-size: var(--bigger-font-size);
+  line-height: 1.7;
+}
+
+.btn-orange {
+  background: var(--primary-gradient);
+  padding: 2.25rem 4.5rem;
+}
+
+.home__img-img {
+  width: 130%;
+  justify-self: center;
+}
+
+/* https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q */
