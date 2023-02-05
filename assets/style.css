@@ -27,6 +27,7 @@
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 700;
+  --font-super-bold: 900;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -97,7 +98,7 @@ a {
 }
 
 .section {
-  padding-block: 5rem 1rem;
+  padding-block: 1rem;
 }
 
 .section__title {
@@ -178,7 +179,7 @@ a {
 
 .home__container {
   row-gap: 6rem;
-  padding-top: 8rem;
+  padding-top: 13rem;
 }
 
 .home__data {
@@ -188,7 +189,7 @@ a {
 .home__title {
   font-size: var(--biggest-font-size);
   font-family: var(--title-font);
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--font-super-bold);
   margin-bottom: 2rem;
 }
 
@@ -211,8 +212,66 @@ a {
 }
 
 .home__img-img {
-  width: 133%;
+  width: 130%;
   justify-self: center;
 }
 
 /* https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q */
+
+/*=============== POPULAR ===============*/
+
+.courses__container {
+  grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: 5.5rem;
+}
+
+.courses__title {
+  color: #fff;
+  background: var(--primary-gradient);
+  font-size: 3rem;
+  padding: 4rem 3.5rem;
+  border-radius: 1rem;
+}
+
+.courses__card {
+  position: relative;
+  background-color: var(--white);
+  padding: 8rem 3.5rem 4.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px hsla(19, 64%, 48%, 0.08);
+  text-align: left;
+}
+
+.courses__img {
+  width: 120px;
+  position: absolute;
+  inset: 0;
+  top: -3rem;
+  left: 3.5rem;
+  transition: transform 0.4s;
+}
+
+.courses__name {
+  font-size: 3rem;
+  font-weight: var(--font-super-bold);
+  font-family: var(--title-color);
+  margin-bottom: 2.5rem;
+}
+
+.courses__description {
+  display: block;
+  font-size: var(--bigger-font-size);
+  line-height: 1.6;
+  margin-bottom: 3.5rem;
+}
+
+.courses__button {
+  border: none;
+  outline: none;
+  color: var(--main-orange);
+  font-weight: var(--font-semi-bold);
+  font-size: 2.3rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
