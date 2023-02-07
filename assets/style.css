@@ -277,3 +277,18 @@ a {
   cursor: pointer;
   transition: background 0.3s;
 }
+
+/*=============== FOOTER ===============*/
+footer {
+  background: var(--blue);
+}
+
+.footer__container {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-footer {
+  background: var(--secondary-gradient);
+}
