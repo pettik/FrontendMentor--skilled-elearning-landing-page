@@ -15,14 +15,14 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Plus Jakarta Sans', sans-serif;
-  --biggest-font-size: 5rem;
-  --bigger-font-size: 2rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
+  --biggest-font-size: 3.5em;
+  --bigger-font-size: 1.3em;
+  --h1-font-size: 1.5em;
+  --h2-font-size: 1.25em;
+  --h3-font-size: 1.65em;
+  --normal-font-size: 0.7em;
+  --small-font-size: 0.813em;
+  --smaller-font-size: 0.75em;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
@@ -56,6 +56,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
@@ -64,6 +65,7 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
   color: var(--text-gray);
   background-repeat: no-repeat;
+  font-size: 1.6em;
 }
 
 h1,
@@ -88,7 +90,7 @@ a {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1024px;
+  max-width: 100em;
   margin-inline: 2rem;
 }
 
@@ -165,7 +167,7 @@ a {
 }
 
 .nav__logo img {
-  width: 173px;
+  width: 7em;
 }
 
 .btn-blue {
@@ -218,7 +220,11 @@ a {
 
 /* https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q */
 
-/*=============== POPULAR ===============*/
+/*=============== Courses ===============*/
+
+.courses {
+  margin-top: -3em;
+}
 
 .courses__container {
   grid-template-columns: 1fr;
@@ -246,7 +252,7 @@ a {
 }
 
 .courses__img {
-  width: 120px;
+  width: 4.5em;
   position: absolute;
   inset: 0;
   top: -3rem;
@@ -255,7 +261,7 @@ a {
 }
 
 .courses__name {
-  font-size: 3rem;
+  font-size: var(--h3-font-size);
   font-weight: var(--font-super-bold);
   font-family: var(--title-color);
   margin-bottom: 2.5rem;
@@ -292,3 +298,8 @@ footer {
 .btn-footer {
   background: var(--secondary-gradient);
 }
+
+@media screen and (min-width: 768px) {
+  main {
+  }
+} ;
