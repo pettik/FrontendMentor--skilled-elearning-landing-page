@@ -16,11 +16,11 @@
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Plus Jakarta Sans', sans-serif;
   --biggest-font-size: 3.5em;
-  --bigger-font-size: 1.3em;
+  --bigger-font-size: 1.35em;
   --h1-font-size: 1.5em;
   --h2-font-size: 1.25em;
   --h3-font-size: 1.65em;
-  --normal-font-size: 0.7em;
+  --normal-font-size: 1.55em;
   --small-font-size: 0.813em;
   --smaller-font-size: 0.75em;
 
@@ -40,7 +40,7 @@
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.6em;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
@@ -65,7 +65,6 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
   color: var(--text-gray);
   background-repeat: no-repeat;
-  font-size: 1.6em;
 }
 
 h1,
@@ -90,7 +89,7 @@ a {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 100em;
+  max-width: 50em;
   margin-inline: 2rem;
 }
 
@@ -130,7 +129,7 @@ a {
   font-size: 2rem;
   color: var(--white);
   font-weight: 700;
-  padding: 1.8rem 2.5rem;
+  padding: 1em 1.8em;
   border-radius: 6rem;
 }
 
@@ -218,6 +217,10 @@ a {
   justify-self: center;
 }
 
+.desktop-image {
+  display: none;
+}
+
 /* https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q */
 
 /*=============== Courses ===============*/
@@ -236,7 +239,7 @@ a {
 .courses__title {
   color: #fff;
   background: var(--primary-gradient);
-  font-size: 3rem;
+  font-size: 2.1em;
   padding: 4rem 3.5rem;
   border-radius: 1rem;
   font-weight: 700;
@@ -300,6 +303,55 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  main {
+  .header {
+    position: initial;
+    background-color: transparent;
+    padding-bottom: 0;
   }
-} ;
+
+  .nav {
+    height: 8em;
+    background-color: transparent;
+  }
+
+  .container {
+    max-width: 85em;
+    margin: 0 auto;
+  }
+
+  .main,
+  .home.section {
+    overflow: visible;
+  }
+
+  .home__container {
+    padding-top: 8em;
+    display: flex;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 30em;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+  .desktop-image {
+    display: block;
+    position: absolute;
+    top: -80%;
+    right: -40%;
+    max-width: 1200px;
+    z-index: 333;
+  }
+
+  .home__data {
+    max-width: 55%;
+  }
+
+  /* COURSES */
+  .courses__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    padding-bottom: 5em;
+  }
+}
