@@ -310,12 +310,20 @@ footer {
   }
 
   .nav {
-    height: 8em;
+    height: 9em;
     background-color: transparent;
+  }
+  .nav__logo img {
+    width: 10em;
+  }
+
+  .btn-blue {
+    font-size: 2.3rem;
+    padding: 1em 2em;
   }
 
   .container {
-    max-width: 85em;
+    max-width: 96em;
     margin: 0 auto;
   }
 
@@ -341,7 +349,7 @@ footer {
     top: -80%;
     right: -40%;
     max-width: 1200px;
-    z-index: 333;
+    z-index: -2;
   }
 
   .home__data {
