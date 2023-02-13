@@ -36,7 +36,8 @@
 
 @media screen and (min-width: 1024px) {
   :root {
-    --biggest-font-size: 4rem;
+    --biggest-font-size: 8rem;
+    --bigger-font-size: 1.55em;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -327,17 +328,30 @@ footer {
     margin: 0 auto;
   }
 
+  .btn {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .btn-orange {
+    padding: 2.7rem 4.5rem;
+  }
+
   .main,
   .home.section {
     overflow: visible;
   }
 
   .home__container {
-    padding-top: 8em;
+    padding-top: 12em;
     display: flex;
     position: relative;
     overflow: visible;
     margin-bottom: 30em;
+  }
+
+  .home__title {
+    margin-bottom: 4rem;
   }
 
   .mobile-image {
@@ -346,14 +360,20 @@ footer {
   .desktop-image {
     display: block;
     position: absolute;
-    top: -80%;
-    right: -40%;
-    max-width: 1200px;
+    top: -50%;
+    right: -45%;
+    max-width: 1400px;
     z-index: -2;
   }
 
   .home__data {
     max-width: 55%;
+  }
+
+  .home__description {
+    padding-right: 10em;
+    margin-bottom: 8rem;
+    line-height: 1.6;
   }
 
   /* COURSES */
