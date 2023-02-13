@@ -382,4 +382,8 @@ footer {
     gap: 3em;
     padding-bottom: 5em;
   }
+
+  .courses__title {
+    font-size: 3em;
+  }
 }
