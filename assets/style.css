@@ -99,10 +99,6 @@ a {
   gap: 1.5rem;
 }
 
-.section {
-  padding-block: 1rem;
-}
-
 .section__title {
   font-size: var(--h1-font-size);
   font-family: var(--title-font);
@@ -352,8 +348,13 @@ footer {
   }
 
   .btn {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 500;
+  }
+
+  .btn-blue {
+    font-size: 1.9rem;
+    padding: 1.4rem 2.8rem;
   }
 
   .btn-orange {
@@ -366,7 +367,7 @@ footer {
   }
 
   .home__container {
-    padding-top: 12rem;
+    padding-top: 14rem;
     display: flex;
     position: relative;
     overflow: visible;
