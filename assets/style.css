@@ -304,6 +304,29 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  body::after {
+    content: ' ';
+    background: url(desktop-preview.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
+    width: 1440px;
+    height: 1795px;
+    z-index: 999;
+    opacity: 0.6;
+  }
+
   .header {
     position: initial;
     background-color: transparent;
@@ -311,11 +334,11 @@ footer {
   }
 
   .nav {
-    height: 9rem;
+    height: 10rem;
     background-color: transparent;
   }
   .nav__logo img {
-    width: 10rem;
+    width: 11rem;
   }
 
   .btn-blue {
@@ -324,7 +347,7 @@ footer {
   }
 
   .container {
-    max-width: 115rem;
+    max-width: 108rem;
     margin: 0 auto;
   }
 
