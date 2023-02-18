@@ -307,7 +307,7 @@ footer {
   }
 
   body::after {
-    content: ' ';
+    /* content: ' '; */
     background: url(desktop-preview.jpg);
     background-repeat: no-repeat;
     background-position: center;
