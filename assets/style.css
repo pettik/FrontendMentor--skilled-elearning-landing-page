@@ -15,11 +15,11 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Plus Jakarta Sans', sans-serif;
-  --biggest-font-size: 3.5rem;
-  --bigger-font-size: 1.35rem;
+  --biggest-font-size: 5.2rem;
+  --bigger-font-size: 2.1rem;
   --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.65rem;
+  --h2-font-size: 3.2rem;
+  --h3-font-size: 2.75rem;
   --normal-font-size: 1.55rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
@@ -82,11 +82,6 @@ ul {
 a {
   text-decoration: none;
 }
-
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -163,11 +158,12 @@ a {
 }
 
 .nav__logo img {
-  width: 7rem;
+  width: 12rem;
 }
 
 .btn-blue {
   background-color: var(--blue);
+  padding: 1.8rem 3.2rem;
 }
 
 /*=============== HOME ===============*/
@@ -177,7 +173,7 @@ a {
 
 .home__container {
   row-gap: 6rem;
-  padding-top: 13rem;
+  padding-top: 14rem;
 }
 
 .home__data {
@@ -188,7 +184,7 @@ a {
   font-size: var(--biggest-font-size);
   font-family: var(--title-font);
   font-weight: var(--font-super-bold);
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .home__title div {
@@ -236,7 +232,7 @@ a {
 .courses__title {
   color: #fff;
   background: var(--primary-gradient);
-  font-size: 2.1rem;
+  font-size: var(--h2-font-size);
   padding: 4rem 3.5rem;
   border-radius: 1rem;
   font-weight: 700;
@@ -252,7 +248,7 @@ a {
 }
 
 .courses__img {
-  width: 4.5rem;
+  width: 7.5rem;
   position: absolute;
   inset: 0;
   top: -3rem;
@@ -297,8 +293,9 @@ footer {
 
 .btn-footer {
   background: var(--secondary-gradient);
+  padding: 2rem 3rem;
 }
-
+/*=============== MEDIA QUERIES ===============*/
 @media screen and (min-width: 768px) {
   body {
     position: relative;
@@ -307,7 +304,7 @@ footer {
   }
 
   body::after {
-    /* content: ' '; */
+    content: ' ';
     background: url(desktop-preview.jpg);
     background-repeat: no-repeat;
     background-position: center;
