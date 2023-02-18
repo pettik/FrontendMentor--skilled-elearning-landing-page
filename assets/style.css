@@ -403,6 +403,10 @@ footer {
   }
 
   /* COURSES */
+
+  .courses {
+    padding-bottom: 7rem;
+  }
   .courses__container {
     grid-template-columns: repeat(3, 1fr);
     gap: 8rem 3rem;
@@ -435,5 +439,16 @@ footer {
     position: absolute;
     bottom: 4rem;
     left: 3rem;
+  }
+
+  /* FOOTER */
+
+  .footer__container {
+    padding: 5rem 0;
+  }
+  .btn-footer {
+    padding: 1.5rem 3.2rem;
+    font-size: 1.7rem;
+    font-weight: 700;
   }
 }
