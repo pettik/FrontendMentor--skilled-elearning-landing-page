@@ -33,6 +33,18 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 }
+@media screen and (min-width: 768px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --bigger-font-size: 1.55rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 3.2rem;
+    --h3-font-size: 2.5rem;
+    --normal-font-size: 1.6rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   :root {
@@ -209,7 +221,9 @@ a {
   width: 130%;
   justify-self: center;
 }
-
+.tablet-image {
+  display: none;
+}
 .desktop-image {
   display: none;
 }
@@ -295,8 +309,86 @@ footer {
   background: var(--secondary-gradient);
   padding: 2rem 3rem;
 }
-/*=============== MEDIA QUERIES ===============*/
+/*=============== MEDIA QUERIES - TABLET ===============*/
 @media screen and (min-width: 768px) {
+  body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  body::after {
+    content: ' ';
+    background: url('tablet_preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
+    width: 768px;
+    height: 1760px;
+    z-index: 999;
+    opacity: 0.4;
+    border: 1px solid #000;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 67rem;
+  }
+  .nav {
+    height: 10rem;
+    background-color: transparent;
+  }
+
+  .container {
+    max-width: 69rem;
+  }
+
+  .nav__logo img {
+    width: 9rem;
+  }
+
+  .btn-blue {
+    font-size: 1.45rem;
+    padding: 1.5rem 3rem;
+  }
+
+  .home__container {
+    padding-top: 17rem;
+  }
+
+  .home__title {
+    margin-bottom: 3rem;
+  }
+
+  .home__description {
+    line-height: 1.6;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .tablet-image {
+    display: block;
+    position: absolute;
+    top: -11rem;
+    right: -47rem;
+    max-width: 770px;
+    z-index: 5;
+  }
+}
+
+/*=============== MEDIA QUERIES - DESKTOP ===============*/
+@media screen and (min-width: 1024px) {
   body {
     position: relative;
     width: 100%;
@@ -318,6 +410,10 @@ footer {
     height: 1795px;
     z-index: 999;
     opacity: 0.6;
+  }
+
+  .container {
+    margin: 0 auto;
   }
 
   .header {
@@ -377,9 +473,10 @@ footer {
     margin-bottom: 3rem;
   }
 
-  .mobile-image {
+  .tablet-image {
     display: none;
   }
+
   .desktop-image {
     display: block;
     position: absolute;
