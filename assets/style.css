@@ -330,9 +330,13 @@ footer {
 
     width: 768px;
     height: 1760px;
-    z-index: 999;
+    z-index: 99;
     opacity: 0.4;
     border: 1px solid #000;
+  }
+
+  .main {
+    overflow: initial;
   }
 
   .container {
@@ -348,6 +352,12 @@ footer {
     max-width: 69rem;
   }
 
+  .header {
+    position: initial;
+    background-color: transparent;
+    padding-bottom: 0;
+  }
+
   .nav__logo img {
     width: 9rem;
   }
@@ -358,7 +368,11 @@ footer {
   }
 
   .home__container {
-    padding-top: 17rem;
+    padding-top: 7rem;
+  }
+
+  .home__data {
+    padding-right: 30rem;
   }
 
   .home__title {
@@ -367,6 +381,12 @@ footer {
 
   .home__description {
     line-height: 1.6;
+    margin-bottom: 4.2rem;
+  }
+
+  .btn-orange {
+    font-size: 1.6rem;
+    padding: 1.65rem 3.8rem;
   }
 
   .mobile-image {
@@ -380,10 +400,15 @@ footer {
   .tablet-image {
     display: block;
     position: absolute;
-    top: -11rem;
-    right: -47rem;
-    max-width: 770px;
+    top: -21rem;
+    right: -31rem;
+    max-width: 730px;
     z-index: 5;
+  }
+
+  .courses__container {
+    padding-top: 26rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -416,16 +441,6 @@ footer {
     margin: 0 auto;
   }
 
-  .header {
-    position: initial;
-    background-color: transparent;
-    padding-bottom: 0;
-  }
-
-  .nav {
-    height: 10rem;
-    background-color: transparent;
-  }
   .nav__logo img {
     width: 11rem;
   }
