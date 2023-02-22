@@ -20,7 +20,8 @@ I can use any tools you like to help you complete the challenge. So if I've got 
 Users should be able to:
 
 View the optimal layout depending on their device's screen size
-See hover states for interactive elements
+See hover states for interactive elementss
+
 
 ### Screenshot
 <img src="assets\mobile-preview.jpg" width="300px" alt="mobile preview">
