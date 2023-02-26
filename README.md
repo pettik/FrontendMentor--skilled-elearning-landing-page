@@ -23,5 +23,15 @@ View the optimal layout depending on their device's screen size
 See hover states for interactive elementss
 
 
+# LIVE SITE: ➡️https://pettik-skilled-elearning-landing.netlify.app/ ⬅️ 
+
 ### Screenshot
-<img src="assets\mobile-preview.jpg" width="300px" alt="mobile preview">
+## MOBILE PREVIEW 📲⬇️
+<img src="assets\mobile-preview.png" width="300px" alt="mobile preview">
+
+## TABLET PREVIEW 💻⬇️
+<img src="assets\tablet-preview.png" alt="tablet preview">
+
+## DESKTOP PREVIEW 🖥️⬇️
+<img src="assets\desktop-preview.png" alt="tablet preview">
+
